@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Passcode Generator";
+}
+
+
+<div class="text-center">
+    <h1 class="jumbotron"> Random Passcode Generator! (passcode # @ViewBag.Count )</h1>
+        <div>
+            <h3>@ViewBag.Passcode</h3> 
+        </div>
+    <br>
+    <a href="/Generate" class="btn btn-md btn-info" > Generate Passcode! @ViewBag.Count </a>
+    <a href="/Reset" class="btn btn-danger" > Reset Count </a>
+</div>
+
+@* @{ if(ViewBag.Count == null) { <h1>0</h1>} else {@ViewBag.Count} } *@
